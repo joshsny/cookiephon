@@ -1,4 +1,4 @@
-import product from "next-seo/lib/jsonld/product";
+
 import React from "react";
 
 const Product = () => {
