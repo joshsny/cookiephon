@@ -79,19 +79,23 @@ const Product = () => {
             </p>
             <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
               <div className="flex">
-                <span className="mr-3">Color</span>
-                <button className="w-6 h-6 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                <button className="w-6 h-6 ml-1 bg-gray-700 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                <button className="w-6 h-6 ml-1 bg-yellow-500 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <span className="mr-3">Kolor</span>
+                <button className="w-6 h-6 ml-1 bg-red-600 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <button className="w-6 h-6 ml-1 bg-orange-500 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <button className="w-6 h-6 ml-1 bg-yellow-300 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <button className="w-6 h-6 ml-1 bg-green-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <button className="w-6 h-6 ml-1 bg-blue-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <button className="w-6 h-6 ml-1 bg-blue-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <button className="w-6 h-6 ml-1 bg-violet-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                <button className="w-6 h-6 ml-1 bg-black border-2 border-gray-300 rounded-full focus:outline-none"></button>
               </div>
               <div className="flex items-center ml-6">
-                <span className="mr-3">Size</span>
+                <span className="mr-3">Wielkość</span>
                 <div className="relative">
                   <select className="py-2 pl-3 pr-10 text-base border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500">
-                    <option>SM</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
                   </select>
                   <span className="absolute top-0 right-0 flex items-center justify-center w-10 h-full text-center text-gray-600 pointer-events-none">
                     <svg
@@ -109,9 +113,9 @@ const Product = () => {
               </div>
             </div>
             <div className="flex">
-              <span className="text-2xl font-medium text-gray-900 title-font">$58.00</span>
+              <span className="text-2xl font-medium text-gray-900 title-font">2 słodycze</span>
               <button className="flex px-6 py-2 ml-auto text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">
-                Button
+                Kup
               </button>
               <button className="inline-flex items-center justify-center w-10 h-10 p-0 ml-4 text-gray-500 bg-gray-200 border-0 rounded-full">
                 <svg

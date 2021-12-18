@@ -48,11 +48,9 @@ export default function CookiePhon() {
                 </div>
                 <div className="flex justify-center w-1/2 h-16">
                   <Link href="/product">
-                    <a
-                      id="link-cookiepods"
-                      className="px-4 py-2 font-semibold text-yellow-700 bg-transparent border border-yellow-500 rounded hover:bg-yellow-500 hover:text-white hover:border-transparent">
+                    <button className="px-4 py-2 font-semibold text-yellow-700 bg-transparent border border-yellow-500 rounded hover:bg-yellow-500 hover:text-white hover:border-transparent">
                       Zamów
-                    </a>
+                    </button>
                   </Link>
                 </div>
               </div>
