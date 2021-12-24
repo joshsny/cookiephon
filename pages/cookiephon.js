@@ -8,10 +8,10 @@ const Product = () => {
       <section className="overflow-hidden text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-4/5">
-            <div class="mockup-phone border-green-500">
-              <div class="camera"></div>
-              <div class="display">
-                <div class="artboard phone-1 artboard-demo">
+            <div className="mockup-phone border-green-500">
+              <div className="camera"></div>
+              <div className="display">
+                <div className="artboard phone-1 artboard-demo">
                   <img
                     alt="ecommerce"
                     className="object-cover object-center w-full rounded"
@@ -132,9 +132,9 @@ const Product = () => {
                       <svg
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         className="w-4 h-4"
                         viewBox="0 0 24 24"
                       >
@@ -162,9 +162,9 @@ const Product = () => {
                 >
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
