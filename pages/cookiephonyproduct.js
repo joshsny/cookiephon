@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import CookiePhonHeader from "../components/CookiePhonHeader";
 
-const Product = () => {
+const CookiephonyProduct = () => {
   const [red, setRed] = useState(false);
   return (
     <>
@@ -17,7 +17,7 @@ const Product = () => {
             />
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
               <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font">
-                CookiePods
+                Cookiephon Note 20 Pro
               </h1>
               <div className="flex mb-4">
                 <span className="flex items-center">
@@ -96,12 +96,10 @@ const Product = () => {
                 </span>
               </div>
               <p className="leading-relaxed">
-                CookiePods to wspaniałe urządzenie dla słuchaczów muzyki i
-                audiobooków. Posiadają automatyczną funkcje wykrywania idealnej
-                głośności, do tego są w wszystkich kolorach tęczy. Cookiepods są
-                małe i przenośne oraz czasami (jak na loterii) zdarza się wygrać
-                kupon na estetyczne pudełko. Nasze słuchawki są najbardziej
-                ekologiczne i zaawansowane na światowym rynku.
+                Lubisz duzy ekran i dobry aparat? Jeśli tak to Cookiephon Note
+                20 Pro jest dla ciebie. Wspaniały i okazały, przejrzysty i
+                ślniący do zdjęć wręcz idealny. A do wyboru do koloru cała
+                tęcza. Zapraszamy do kupna!{" "}
               </p>
               <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
                 <div className="flex">
@@ -116,32 +114,12 @@ const Product = () => {
                   <button className="w-6 h-6 ml-1 bg-black border-2 border-gray-300 rounded-full focus:outline-none"></button>
                 </div>
                 <div className="flex items-center ml-6">
-                  <span className="mr-3">Wielkość</span>
-                  <div className="relative">
-                    <select className="py-2 pl-3 pr-10 text-base border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500">
-                      <option>3</option>
-                      <option>2</option>
-                      <option>1</option>
-                    </select>
-                    <span className="absolute top-0 right-0 flex items-center justify-center w-10 h-full text-center text-gray-600 pointer-events-none">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-4 h-4"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M6 9l6 6 6-6"></path>
-                      </svg>
-                    </span>
-                  </div>
+                  <div className="relative"></div>
                 </div>
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">
-                  2 słodycze
+                  4 słodycze
                 </span>
                 <Link href="/cookiephonkoszyk">
                   <button className="flex px-6 py-2 ml-auto text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">
@@ -174,4 +152,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default CookiephonyProduct;

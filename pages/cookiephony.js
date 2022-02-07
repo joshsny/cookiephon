@@ -1,10 +1,12 @@
+import Link from "next/link";
 import React, { useState } from "react";
-import CookiePhon from ".";
+import CookiePhonHeader from "../components/CookiePhonHeader";
 
 const Product = () => {
   const [red, setRed] = useState(false);
   return (
     <>
+      <CookiePhonHeader />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
@@ -24,9 +26,11 @@ const Product = () => {
                   CookiePhon 13 pro
                 </h2>
                 <p className="mt-1">3 małe słodycze</p>
-                <button className="btn btn-outline btn-xs mt-2 text-yellow-600 border-yellow-500 hover:bg-yellow-500">
-                  Zamów
-                </button>
+                <Link href="/cookiephonyproduct">
+                  <a className="btn btn-outline btn-xs mt-2 text-yellow-600 border-yellow-500 hover:bg-yellow-500">
+                    Zamów
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -105,7 +109,7 @@ const Product = () => {
                   CATEGORY
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  CookiePhon Note 20 Pro{" "}
+                  CookiePhon Note 20 Pro
                 </h2>
                 <p className="mt-1">4 małe słodycze</p>
                 <button className="btn btn-outline btn-xs mt-2 text-yellow-600 border-yellow-500 hover:bg-yellow-500">
