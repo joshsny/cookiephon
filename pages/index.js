@@ -53,11 +53,7 @@ export default function CookiePhon() {
                   <h2 className="text-lg font-medium text-gray-900 title-font">
                     CookiePods
                   </h2>
-<<<<<<< HEAD
-                  <p class="mt-1">2 słodycze</p>
-=======
-                  <p className="mt-1">Cena do negocjacji</p>
->>>>>>> 2571506a9c1e4b0d9a8990335d9d80558f259adb
+                  <p className="mt-1">2 słodycze</p>
                 </div>
                 <div className="flex justify-center w-1/2 h-16">
                   <Link href="/product">
@@ -140,7 +136,6 @@ export default function CookiePhon() {
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
-<<<<<<< HEAD
                   class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                   src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
                 />
@@ -149,16 +144,6 @@ export default function CookiePhon() {
                     Wkrótce będzie tu nasz pracownik
                   </h2>
                   <p class="text-gray-500"></p>
-=======
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/88x88"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Oskar Blinde
-                  </h2>
-                  <p className="text-gray-500">Founder</p>
->>>>>>> 2571506a9c1e4b0d9a8990335d9d80558f259adb
                 </div>
               </div>
             </div>
