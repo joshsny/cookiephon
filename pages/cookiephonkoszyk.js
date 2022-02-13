@@ -5,11 +5,11 @@ export default function CookiePhon() {
   return (
     <>
       <CookiePhonHeader />
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-            <h1 class="title-font font-medium text-3xl text-gray-900"></h1>
-            <p class="leading-relaxed mt-4">
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
+          <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+            <h1 className="title-font font-medium text-3xl text-gray-900"></h1>
+            <p className="leading-relaxed mt-4">
               Wposz swoje imię i nazwisko hjsadfshfib
               uyabvabhfi`sglbgfl``ilufbi;fzod`
             </p>
