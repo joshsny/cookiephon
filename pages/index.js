@@ -8,25 +8,25 @@ export default function CookiePhon() {
       <section class="text-gray-600 body-font">
         <div class="container flex flex-col items-center justify-center px-5 py-24 mx-auto">
           <img
-            class="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
+            className="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
             alt="hero"
             src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
           />
-          <div class="w-full text-center lg:w-2/3">
-            <h1 class="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl">
+          <div className="w-full text-center lg:w-2/3">
+            <h1 className="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl">
               Cookiephon
             </h1>
             <h1 class="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-2xl">
               Witamy
             </h1>
-            <div class="flex justify-center">
+            <div className="flex justify-center">
               <Link href="#zlozzamowienie">
-                <a class="inline-flex px-6 py-2 text-lg text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">
+                <a className="inline-flex px-6 py-2 text-lg text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">
                   Złóż zamówienie
                 </a>
               </Link>
               <Link href="#dowiedzsiewiecej">
-                <a class="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200">
+                <a className="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200">
                   Dowiedz się więcej
                 </a>
               </Link>
@@ -34,57 +34,61 @@ export default function CookiePhon() {
           </div>
         </div>
       </section>
-      <section class="text-gray-600 body-font" id="zlozzamowienie">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap justify-center -m-4">
-            <div class="w-full p-4 lg:w-1/4 md:w-1/2">
-              <a class="relative block h-48 overflow-hidden rounded">
+      <section className="text-gray-600 body-font" id="zlozzamowienie">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap justify-center -m-4">
+            <div className="w-full p-4 lg:w-1/4 md:w-1/2">
+              <a className="relative block h-48 overflow-hidden rounded">
                 <img
                   alt="ecommerce"
-                  class="block object-cover object-center w-full h-full"
+                  className="block object-cover object-center w-full h-full"
                   src="https://dummyimage.com/420x260"
                 />
               </a>
-              <div class="flex flex-row items-end">
-                <div class="w-1/2 mt-4">
-                  <h3 class="mb-1 text-xs tracking-widest text-gray-500 title-font">
+              <div className="flex flex-row items-end">
+                <div className="w-1/2 mt-4">
+                  <h3 className="mb-1 text-xs tracking-widest text-gray-500 title-font">
                     🎧
                   </h3>
-                  <h2 class="text-lg font-medium text-gray-900 title-font">
+                  <h2 className="text-lg font-medium text-gray-900 title-font">
                     CookiePods
                   </h2>
+<<<<<<< HEAD
                   <p class="mt-1">2 słodycze</p>
+=======
+                  <p className="mt-1">Cena do negocjacji</p>
+>>>>>>> 2571506a9c1e4b0d9a8990335d9d80558f259adb
                 </div>
-                <div class="flex justify-center w-1/2 h-16">
+                <div className="flex justify-center w-1/2 h-16">
                   <Link href="/product">
-                    <button class="px-4 py-2 font-semibold text-yellow-700 bg-transparent border border-yellow-500 rounded hover:bg-yellow-500 hover:text-white hover:border-transparent">
+                    <button className="px-4 py-2 font-semibold text-yellow-700 bg-transparent border border-yellow-500 rounded hover:bg-yellow-500 hover:text-white hover:border-transparent">
                       Zamów
                     </button>
                   </Link>
                 </div>
               </div>
             </div>
-            <div class="w-full p-4 lg:w-1/4 md:w-1/2">
-              <a class="relative block h-48 overflow-hidden rounded">
+            <div className="w-full p-4 lg:w-1/4 md:w-1/2">
+              <a className="relative block h-48 overflow-hidden rounded">
                 <img
                   alt="ecommerce"
-                  class="block object-cover object-center w-full h-full"
+                  className="block object-cover object-center w-full h-full"
                   src="/cookiephony2.jpeg"
                 />
               </a>
-              <div class="flex flex-row items-end">
-                <div class="w-1/2 mt-4">
-                  <h3 class="mb-1 text-xs tracking-widest text-gray-500 title-font">
+              <div className="flex flex-row items-end">
+                <div className="w-1/2 mt-4">
+                  <h3 className="mb-1 text-xs tracking-widest text-gray-500 title-font">
                     📱
                   </h3>
-                  <h2 class="text-lg font-medium text-gray-900 title-font">
+                  <h2 className="text-lg font-medium text-gray-900 title-font">
                     CookiePhon
                   </h2>
                   <p class="mt-1"> 2 słodycze</p>
                 </div>
-                <div class="flex justify-center w-1/2 h-16">
+                <div className="flex justify-center w-1/2 h-16">
                   <Link href="/cookiephony">
-                    <button class="px-4 py-2 font-semibold text-yellow-700 bg-transparent border border-yellow-500 rounded hover:bg-yellow-500 hover:text-white hover:border-transparent">
+                    <button className="px-4 py-2 font-semibold text-yellow-700 bg-transparent border border-yellow-500 rounded hover:bg-yellow-500 hover:text-white hover:border-transparent">
                       Zamów
                     </button>
                   </Link>
@@ -94,46 +98,72 @@ export default function CookiePhon() {
           </div>
         </div>
       </section>
-      <section class="text-gray-600 body-font" id="dowiedzsiewiecej">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+      <section className="text-gray-600 body-font" id="dowiedzsiewiecej">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               Nasz Zespół
             </h1>
           </div>
-          <div class="flex flex-wrap -m-2">
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <div className="flex flex-wrap -m-2">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
-                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                   src="/Hania.jpeg"
                 />
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
                     Hania Snyder
                   </h2>
-                  <p class="text-gray-500">Szef informatyków</p>
+                  <p className="text-gray-500">Szef informatyków</p>
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
-                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                   src="/josh.jpeg"
                 />
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
                     Josh Snyder
                   </h2>
-                  <p class="text-gray-500">Informatyk</p>
+                  <p className="text-gray-500">Informatyk</p>
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+<<<<<<< HEAD
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
+                />
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
+                    Wkrótce będzie tu nasz pracownik
+                  </h2>
+                  <p class="text-gray-500"></p>
+=======
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://dummyimage.com/88x88"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Oskar Blinde
+                  </h2>
+                  <p className="text-gray-500">Founder</p>
+>>>>>>> 2571506a9c1e4b0d9a8990335d9d80558f259adb
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
                   class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -147,8 +177,8 @@ export default function CookiePhon() {
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
                   class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -162,8 +192,8 @@ export default function CookiePhon() {
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
                   class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -177,8 +207,8 @@ export default function CookiePhon() {
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
                   class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -192,8 +222,8 @@ export default function CookiePhon() {
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
                   class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -207,33 +237,18 @@ export default function CookiePhon() {
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <img
                   alt="team"
-                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
-                />
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">
-                    Wkrótce będzie tu nasz pracownik
-                  </h2>
-                  <p class="text-gray-500"></p>
-                </div>
-              </div>
-            </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                   src="/prezes.jpeg"
                 />
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
                     Marysia Adamczyk
                   </h2>
-                  <p class="text-gray-500">Prezes</p>
+                  <p className="text-gray-500">Prezes</p>
                 </div>
               </div>
             </div>
