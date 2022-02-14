@@ -14,7 +14,7 @@ const Product11tPro = () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-4/5">
             <div
-              class={`mockup-phone ${
+              className={`mockup-phone ${
                 phoneColor === "green"
                   ? "bg-green-200"
                   : phoneColor === "violet"
@@ -28,9 +28,9 @@ const Product11tPro = () => {
                   : "border-blue-400"
               }`}
             >
-              <div class="camera"></div>
-              <div class="display">
-                <div class="artboard phone-1 artboard-demo">
+              <div className="camera"></div>
+              <div className="display">
+                <div className="artboard phone-1 artboard-demo">
                   <img
                     className="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
                     alt="hero"
@@ -176,9 +176,9 @@ const Product11tPro = () => {
                 >
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
