@@ -4,17 +4,29 @@ import CookiePhonHeader from "../components/CookiePhonHeader";
 
 const Product = () => {
   const [red, setRed] = useState(false);
+  const [podsColor, setPodsColor] = useState("violet");
+  console.log("podscolor: ", podsColor);
   return (
     <>
       <CookiePhonHeader />
       <section className="overflow-hidden text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-4/5">
-            <img
-              alt="ecommerce"
-              className="object-cover object-center w-full h-64 rounded lg:w-1/2 lg:h-auto"
-              src="https://dummyimage.com/400x400"
-            />
+            <svg
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 1000 1000"
+              enableBackground="new 0 0 1000 1000"
+              className="object-cover  fill-green-200 object-center w-full h-64 rounded lg:w-1/2 lg:h-auto"
+            >
+              <g>
+                <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                  <path d="M3217.9,4977.7c-320.4-69.3-741.3-339.5-1090.4-700.6l-186.5-191.3v-456.7v-456.7l160.2-167.4c330-351.5,1030.6-717.3,1374.9-717.3h66.9V745.4V-796.8h71.7h71.7v-466.3v-466.3h71.7h71.7v-1530.3V-4790h155.4h155.4v1527.9v1530.3l78.9,7.2l76.5,7.2l7.2,461.5l4.8,459.1h71.7h71.7v1812.5v1810.1l83.7,167.4c107.6,217.6,155.4,408.9,155.4,633.7c-2.4,636-418.4,1200.3-997.1,1351C3531.2,5020.8,3414,5020.8,3217.9,4977.7z M2213.7,4100.2c31.1-43,38.3-133.9,38.3-478.2c0-399.3-2.4-428-50.2-475.8c-43-43-55-45.4-100.4-14.4c-50.2,33.5-52.6,52.6-59.8,490.2c-4.8,389.8,0,459.1,33.5,492.6C2125.2,4167.1,2170.6,4162.3,2213.7,4100.2z M4193.5,3815.6c26.3-14.4,62.2-62.2,81.3-105.2c40.6-100.4,16.7-174.6-78.9-251.1c-59.8-47.8-88.5-50.2-298.9-43c-205.6,7.2-236.7,14.3-291.7,64.6c-83.7,78.9-86.1,220-2.4,301.3c52.6,55,74.1,59.8,298.9,59.8C4035.7,3841.9,4164.8,3830,4193.5,3815.6z" />
+                  <path d="M6395.7,4980.1c-640.8-148.3-1083.2-698.2-1083.2-1353.4c0-526,330-989.9,839.3-1174l141.1-52.6V802.8V-796.8h71.7h71.7v-466.3v-466.3h83.7h83.7v-1530.3V-4790h143.5h143.5v1530.3v1530.3h83.7h83.7v466.3v466.3h71.7h71.7V812.4v1606.8l184.1,95.6c451.9,231.9,707.8,688.6,669.5,1202.7c-40.7,569.1-406.5,1042.5-944.5,1221.9C6917,5006.4,6589.4,5023.2,6395.7,4980.1z M6797.4,4616.7c21.5-93.2,23.9-284.5,7.2-330c-7.2-21.5-33.5-38.3-57.4-38.3c-23.9,0-50.2,16.7-57.4,38.3c-26.3,69.3-14.3,358.7,14.4,387.4C6747.2,4717.1,6780.7,4695.6,6797.4,4616.7z" />
+                </g>
+              </g>
+            </svg>
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
               <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font">
                 CookiePods
@@ -62,7 +74,7 @@ const Product = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                   </svg>
                   <span className="ml-3 text-gray-600">
-                    {red ? 5 : 4} Gwiazdki
+                    {red ? 5 : 4} {red ? "Gwiazdek" : "Gwiazdki"}
                   </span>
                 </span>
                 <span className="flex py-2 pl-3 ml-3 border-l-2 border-gray-200 space-x-2s">
@@ -106,12 +118,52 @@ const Product = () => {
               <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
                 <div className="flex">
                   <span className="mr-3">Kolor</span>
-                  <button className="w-6 h-6 ml-1 bg-red-600 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-orange-500 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-yellow-300 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-green-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-blue-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-blue-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-red-600 border-2 ${
+                      podsColor === "red" ? "border-red-800" : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPodsColor("red")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-orange-500 border-2 ${
+                      podsColor === "orange"
+                        ? "border-orange-700"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPodsColor("orange")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-yellow-300 border-2 ${
+                      podsColor === "yellow"
+                        ? "border-yellow-500"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPodsColor("yellow")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-green-200 border-2 ${
+                      podsColor === "green"
+                        ? "border-green-400"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPodsColor("green")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-blue-200 border-2 ${
+                      podsColor === "blue"
+                        ? "border-blue-400"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPodsColor("blue")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-blue-400 border-2 ${
+                      podsColor === "darkblue"
+                        ? "border-blue-600"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPodsColor("darkblue")}
+                  ></button>
                   <button className="w-6 h-6 ml-1 bg-violet-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
                   <button className="w-6 h-6 ml-1 bg-black border-2 border-gray-300 rounded-full focus:outline-none"></button>
                 </div>
@@ -143,7 +195,7 @@ const Product = () => {
                 <span className="text-2xl font-medium text-gray-900 title-font">
                   2 słodycze
                 </span>
-                <Link href="/cookiephonkoszyk">
+                <Link href={`/cookiephonkoszyk?model=cookiepods&color=red`}>
                   <button className="flex px-6 py-2 ml-auto text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">
                     Kup
                   </button>
