@@ -1,21 +1,43 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import CookiePhonHeader from "../components/CookiePhonHeader";
-import Product from "./product";
 
 const Product11tPro = () => {
   const [red, setRed] = useState(false);
+  const [phoneColor, setPhoneColor] = useState("white");
+  console.log("phonecolor: ", phoneColor);
   return (
     <>
       <CookiePhonHeader />
       <section className="overflow-hidden text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-4/5">
-            <img
-              alt="ecommerce"
-              className="object-cover object-center w-full h-64 rounded lg:w-1/2 lg:h-auto"
-              src="https://dummyimage.com/400x400"
-            />
+            <div
+              className={`mockup-phone ${
+                phoneColor === "blue"
+                  ? "bg-blue-500"
+                  : phoneColor === "gray"
+                  ? "bg-gray-300"
+                  : "bg-black"
+              } ${
+                phoneColor === "blue"
+                  ? "border-blue-500"
+                  : phoneColor === "gray"
+                  ? "border-gray-300"
+                  : "border-black"
+              }`}
+            >
+              <div className="camera"></div>
+              <div className="display">
+                <div className="artboard phone-1 artboard-demo">
+                  <img
+                    className="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
+                    alt="hero"
+                    src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
+                  />
+                </div>
+              </div>
+            </div>
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
               <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font">
                 Cookiephon 11t Pro
@@ -63,7 +85,7 @@ const Product11tPro = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                   </svg>
                   <span className="ml-3 text-gray-600">
-                    {red ? 5 : 4} Gwiazdki
+                    {red ? 5 : 4} {red ? "Gwiazdek" : "Gwiazdki"}
                   </span>
                 </span>
                 <span className="flex py-2 pl-3 ml-3 border-l-2 border-gray-200 space-x-2s">
@@ -97,22 +119,39 @@ const Product11tPro = () => {
                 </span>
               </div>
               <p className="leading-relaxed">
-                Lubisz duzy ekran i dobry aparat? Jeśli tak to Cookiephon Note
-                20 Pro jest dla ciebie. Wspaniały i okazały, przejrzysty i
-                ślniący do zdjęć wręcz idealny. A do wyboru do koloru cała
-                tęcza. Zapraszamy do kupna!{" "}
+                Poznaj smartfon, który został zaprojektowany z myślą o
+                wymagających użytkownikach. Cookiephon 11T to połączenie
+                elegancji z nowoczesnością. Aparat, którym zrobisz doskonałe
+                zdjęcia i nakręcisz zapierające dech w piersiach filmy. Świetna
+                wydajność i duża bateria ułatwią Ci codzienną pracę, a kinowy
+                ekran zrobi z Ciebie fana oglądania filmów na wyświetlaczu
+                smartfona.{" "}
               </p>
               <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
                 <div className="flex">
                   <span className="mr-3">Kolor</span>
-                  <button className="w-6 h-6 ml-1 bg-red-600 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-orange-500 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-yellow-300 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-green-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-blue-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-blue-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-violet-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-black border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-gray-300 border-2 ${
+                      phoneColor === "gray" ? "border-black" : "border-gray-300"
+                    } border-gray-500 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("gray")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-black border-2 ${
+                      phoneColor === "black"
+                        ? "border-gray-400"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("black")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-blue-500 border-2 ${
+                      phoneColor === "blue"
+                        ? "border-blue-800"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("blue")}
+                  ></button>
                 </div>
                 <div className="flex items-center ml-6">
                   <div className="relative"></div>
@@ -120,7 +159,7 @@ const Product11tPro = () => {
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">
-                  4 słodycze
+                  3 słodycze
                 </span>
                 <Link href="/cookiephonkoszyk">
                   <button className="flex px-6 py-2 ml-auto text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">

@@ -80,7 +80,7 @@ export default function CookiePhon() {
                   <h2 className="text-lg font-medium text-gray-900 title-font">
                     CookiePhon
                   </h2>
-                  <p className="mt-1"> 2 słodycze</p>
+                  <p className="mt-1">Tyle ile trzeba</p>
                 </div>
                 <div className="flex justify-center w-1/2 h-16">
                   <Link href="/cookiephony">

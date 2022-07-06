@@ -1,11 +1,21 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import CookiePhonHeader from "../components/CookiePhonHeader";
-import Product from "./product";
+
+const bgColors = {
+  red: "bg-red-600 border-red-600",
+  orange: "bg-orange-500 border-orange-500",
+  yellow: "bg-yellow-400 border-yellow-400",
+  green: "bg-green-500 border-green-500",
+  blue: "bg-blue-500 border-blue-500",
+  violet: "bg-violet-300 border-violet-300",
+  black: "bg-black border-black",
+  gray: "bg-gray-300 border-gray-300",
+};
 
 const Product11tPro = () => {
   const [red, setRed] = useState(false);
-  const [phoneColor, setPhoneColor] = useState("violet");
+  const [phoneColor, setPhoneColor] = useState("yellow");
   console.log("phonecolor: ", phoneColor);
   return (
     <>
@@ -13,21 +23,7 @@ const Product11tPro = () => {
       <section className="overflow-hidden text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-4/5">
-            <div
-              className={`mockup-phone ${
-                phoneColor === "green"
-                  ? "bg-green-200"
-                  : phoneColor === "violet"
-                  ? "bg-violet-400 "
-                  : "bg-blue-400"
-              } ${
-                phoneColor === "green"
-                  ? "border-green-200"
-                  : phoneColor === "violet"
-                  ? "border-violet-400"
-                  : "border-blue-400"
-              }`}
-            >
+            <div className={`mockup-phone ${bgColors[phoneColor]}`}>
               <div className="camera"></div>
               <div className="display">
                 <div className="artboard phone-1 artboard-demo">
@@ -120,37 +116,45 @@ const Product11tPro = () => {
                 </span>
               </div>
               <p className="leading-relaxed">
-                Lubisz duzy ekran i dobry aparat? Jeśli tak to Cookiephon Note
-                20 Pro jest dla ciebie. Wspaniały i okazały, przejrzysty i
-                ślniący do zdjęć wręcz idealny. A do wyboru do koloru cała
-                tęcza. Zapraszamy do kupna!{" "}
+                Cookiephon 12 Pro może pochwalić się wodoszczelną obudową z
+                najwyższej jakości papieru. To bardzo wydajne urządzenie,
+                najbardziej rozwinięta technologia pozwala nam na
+                zoptymalizowany system cookiePHONES 4, który powoduje płynne
+                radzenie sobie z każdym zadaniem, aplikacją czy grą. Zapraszamy
+                do kupna!{" "}
               </p>
               <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
                 <div className="flex">
                   <span className="mr-3">Kolor</span>
                   <button
-                    className={`w-6 h-6 ml-1 bg-green-400 border-2 ${
-                      phoneColor === "green"
-                        ? "border-green-600"
-                        : "border-gray-300"
-                    } border-gray-300 rounded-full focus:outline-none`}
-                    onClick={() => setPhoneColor("green")}
+                    className={`w-6 h-6 ml-1 bg-gray-300 border-2 ${
+                      phoneColor === "gray" ? "border-black" : "border-gray-200"
+                    } border-gray-200 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("gray")}
                   ></button>
                   <button
-                    className={`w-6 h-6 ml-1 bg-blue-400 border-2 ${
-                      phoneColor === "darkblue"
-                        ? "border-blue-600"
+                    className={`w-6 h-6 ml-1 bg-blue-500 border-2 ${
+                      phoneColor === "blue"
+                        ? "border-blue-700"
                         : "border-gray-300"
                     } border-gray-300 rounded-full focus:outline-none`}
-                    onClick={() => setPhoneColor("darkblue")}
+                    onClick={() => setPhoneColor("blue")}
                   ></button>
                   <button
-                    className={`w-6 h-6 ml-1 bg-violet-400 border-2 ${
-                      phoneColor === "violet"
-                        ? "border-violet-600"
+                    className={`w-6 h-6 ml-1 bg-yellow-400 border-2 ${
+                      phoneColor === "yellow"
+                        ? "border-yellow-500"
                         : "border-gray-300"
                     }  rounded-full focus:outline-none`}
-                    onClick={() => setPhoneColor("violet")}
+                    onClick={() => setPhoneColor("yellow")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-black border-2 ${
+                      phoneColor === "black"
+                        ? "border-gray-400"
+                        : "border-gray-300"
+                    }  rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("black")}
                   ></button>
                 </div>
                 <div className="flex items-center ml-6">
@@ -159,7 +163,7 @@ const Product11tPro = () => {
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">
-                  4 słodycze
+                  3 słodycze
                 </span>
                 <Link
                   href={`/cookiephonkoszyk?model=product12pro&color=${phoneColor}`}

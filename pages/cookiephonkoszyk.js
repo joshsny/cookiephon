@@ -30,10 +30,10 @@ export default function CookiePhon() {
     console.log("toSend: ", toSend);
 
     send(
-      "service_fxyznqo",
-      "template_59djj0l",
+      "service_yog1wdj",
+      "template_6dsc6iq",
       toSend,
-      "user_OTk3Hhgvp6gUuuWYCNe0f"
+      "user_BPFiVy6JeuqFWyyLDv3Hk"
     )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);

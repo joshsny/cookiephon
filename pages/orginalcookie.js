@@ -2,42 +2,54 @@ import Link from "next/link";
 import React, { useState } from "react";
 import CookiePhonHeader from "../components/CookiePhonHeader";
 
-const bgColors = {
-  red: "bg-red-600 border-red-600",
-  orange: "bg-orange-500 border-orange-500",
-  yellow: "bg-yellow-400 border-yellow-400",
-  green: "bg-green-500 border-green-500",
-  blue: "bg-blue-500 border-blue-500",
-  violet: "bg-violet-300 border-violet-300",
-  black: "bg-black border-black",
-  gray: "bg-gray-300 border-gray-300",
-};
-
-const Product4G = () => {
+const Product11tPro = () => {
+  const [image, setImage] = useState();
   const [red, setRed] = useState(false);
-  const [phoneColor, setPhoneColor] = useState("blue");
+  const [phoneColor, setPhoneColor] = useState("white");
   console.log("phonecolor: ", phoneColor);
+  const onImageChange = (e) => {
+    console.log(e.target.files);
+    setImage(e.target.files[0]);
+  };
   return (
     <>
       <CookiePhonHeader />
       <section className="overflow-hidden text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-4/5">
-            <div className={`mockup-phone ${bgColors[phoneColor]}`}>
+            <div
+              className={`mockup-phone ${
+                phoneColor === "blue"
+                  ? "bg-blue-500"
+                  : phoneColor === "gray"
+                  ? "bg-gray-300"
+                  : "bg-black"
+              } ${
+                phoneColor === "blue"
+                  ? "border-blue-500"
+                  : phoneColor === "gray"
+                  ? "border-gray-300"
+                  : "border-black"
+              }`}
+            >
               <div className="camera"></div>
               <div className="display">
                 <div className="artboard phone-1 artboard-demo">
                   <img
-                    className="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
+                    className="object-cover object-center h-full rounded"
                     alt="hero"
-                    src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
+                    src={
+                      image
+                        ? URL.createObjectURL(image)
+                        : "https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
+                    }
                   />
                 </div>
               </div>
             </div>
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
               <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font">
-                Cookiephon 4G
+                Cookiephon 11t Pro
               </h1>
               <div className="flex mb-4">
                 <span className="flex items-center">
@@ -116,29 +128,21 @@ const Product4G = () => {
                 </span>
               </div>
               <p className="leading-relaxed">
-                Cookiephone 4G jest jednym z najtańszych telefonów z ekranem z
-                papieru bambusowego! Jego wielkość jest standardowa lecz bateria
-                stawia wysoką poprzeczkę. Jeżeli nie szukasz drogiego smartfona,
-                który będzie dobrze się sprawował, to postaw na tego
-                Cookiephona. W podstawowej wersji ma techonologię cookiePHONES@2
-                i tuzin miejsca na twoje wszysktkie gry i filmy. Zapraszamy do
-                kupna!{" "}
+                Poznaj smartfon, który został zaprojektowany z myślą o
+                wymagających użytkownikach. Cookiephon 11T to połączenie
+                elegancji z nowoczesnością. Aparat, którym zrobisz doskonałe
+                zdjęcia i nakręcisz zapierające dech w piersiach filmy. Świetna
+                wydajność i duża bateria ułatwią Ci codzienną pracę, a kinowy
+                ekran zrobi z Ciebie fana oglądania filmów na wyświetlaczu
+                smartfona.{" "}
               </p>
               <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
                 <div className="flex">
                   <span className="mr-3">Kolor</span>
                   <button
-                    className={`w-6 h-6 ml-1 bg-violet-400 border-2 ${
-                      phoneColor === "violet"
-                        ? "border-violet-500"
-                        : "border-gray-300"
-                    } border-gray-300 rounded-full focus:outline-none`}
-                    onClick={() => setPhoneColor("violet")}
-                  ></button>
-                  <button
                     className={`w-6 h-6 ml-1 bg-gray-300 border-2 ${
-                      phoneColor === "gray" ? "border-black" : "border-gray-200"
-                    } border-gray-200 rounded-full focus:outline-none`}
+                      phoneColor === "gray" ? "border-black" : "border-gray-300"
+                    } border-gray-500 rounded-full focus:outline-none`}
                     onClick={() => setPhoneColor("gray")}
                   ></button>
                   <button
@@ -161,6 +165,7 @@ const Product4G = () => {
                 <div className="flex items-center ml-6">
                   <div className="relative"></div>
                 </div>
+                <input type="file" accept="image/*" onChange={onImageChange} />
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">
@@ -197,4 +202,4 @@ const Product4G = () => {
   );
 };
 
-export default Product4G;
+export default Product11tPro;

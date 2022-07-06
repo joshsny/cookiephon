@@ -1,21 +1,40 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import CookiePhonHeader from "../components/CookiePhonHeader";
-import Product from "./product";
+
+const bgColors = {
+  red: "bg-red-600 border-red-600",
+  orange: "bg-orange-500 border-orange-500",
+  yellow: "bg-yellow-400 border-yellow-400",
+  green: "bg-green-500 border-green-500",
+  blue: "bg-blue-500 border-blue-500",
+  violet: "bg-violet-300 border-violet-300",
+  black: "bg-black border-black",
+  gray: "bg-gray-300 border-gray-300",
+};
 
 const ProductS21Ultra = () => {
   const [red, setRed] = useState(false);
+  const [phoneColor, setPhoneColor] = useState("yellow");
+  console.log("phonecolor: ", phoneColor);
   return (
     <>
       <CookiePhonHeader />
       <section className="overflow-hidden text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-4/5">
-            <img
-              alt="ecommerce"
-              className="object-cover object-center w-full h-64 rounded lg:w-1/2 lg:h-auto"
-              src="https://dummyimage.com/400x400"
-            />
+            <div className={`mockup-phone ${bgColors[phoneColor]}`}>
+              <div className="camera"></div>
+              <div className="display">
+                <div className="artboard phone-1 artboard-demo">
+                  <img
+                    className="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
+                    alt="hero"
+                    src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
+                  />
+                </div>
+              </div>
+            </div>
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
               <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font">
                 Cookiephon S21 Ultra
@@ -63,7 +82,7 @@ const ProductS21Ultra = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                   </svg>
                   <span className="ml-3 text-gray-600">
-                    {red ? 5 : 4} Gwiazdki
+                    {red ? 5 : 4} {red ? "Gwiazdek" : "Gwiazdki"}
                   </span>
                 </span>
                 <span className="flex py-2 pl-3 ml-3 border-l-2 border-gray-200 space-x-2s">
@@ -97,22 +116,62 @@ const ProductS21Ultra = () => {
                 </span>
               </div>
               <p className="leading-relaxed">
-                Lubisz duzy ekran i dobry aparat? Jeśli tak to Cookiephon Note
-                20 Pro jest dla ciebie. Wspaniały i okazały, przejrzysty i
-                ślniący do zdjęć wręcz idealny. A do wyboru do koloru cała
-                tęcza. Zapraszamy do kupna!{" "}
+                Przedstawiamy Cookiephone S21 Ultra. Zaprojektowany z wyjątkowym
+                aparatem, aby stworzyć rewolucję w fotografii — umożliwiając
+                specjalną funkcję kinowego wideo 8K i robienie niesamowitych
+                zdjęć za jednym razem. A dzięki najszybszemu technologi
+                cookiePHONES^6, najmocniejszemu papierowi i całodziennej
+                baterii, S21 Ultra z łatwością zasługuje na swoją nazwę.{" "}
               </p>
               <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
                 <div className="flex">
                   <span className="mr-3">Kolor</span>
-                  <button className="w-6 h-6 ml-1 bg-red-600 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-orange-500 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-yellow-300 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-green-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-blue-200 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-blue-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-violet-400 border-2 border-gray-300 rounded-full focus:outline-none"></button>
-                  <button className="w-6 h-6 ml-1 bg-black border-2 border-gray-300 rounded-full focus:outline-none"></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-yellow-300 border-2 ${
+                      phoneColor === "yellow"
+                        ? "border-yellow-400"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("yellow")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-green-500 border-2 ${
+                      phoneColor === "green"
+                        ? "border-green-700"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("green")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-black border-2 ${
+                      phoneColor === "black"
+                        ? "border-gray-400"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("black")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-blue-500 border-2 ${
+                      phoneColor === "blue"
+                        ? "border-blue-800"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("blue")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-red-600 border-2 ${
+                      phoneColor === "red"
+                        ? "border-red-800"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("red")}
+                  ></button>
+                  <button
+                    className={`w-6 h-6 ml-1 bg-gray-300 border-2 ${
+                      phoneColor === "gray" ? "border-black" : "border-gray-200"
+                    } border-gray-200 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("gray")}
+                  ></button>
                 </div>
                 <div className="flex items-center ml-6">
                   <div className="relative"></div>
