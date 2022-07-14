@@ -161,7 +161,7 @@ const Product11Pro = () => {
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">
-                  2 słodycze
+                  6 słodyczy
                 </span>
                 <Link href="/cookiephonkoszyk">
                   <button className="flex px-6 py-2 ml-auto text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">

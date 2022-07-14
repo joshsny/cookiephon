@@ -163,7 +163,7 @@ const Product11tPro = () => {
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">
-                  3 słodycze
+                  7 słodyczy
                 </span>
                 <Link
                   href={`/cookiephonkoszyk?model=product12pro&color=${phoneColor}`}

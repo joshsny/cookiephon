@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import CookiePhonHeader from "../components/CookiePhonHeader";
 
-const Product11tPro = () => {
+const OriginalCookie = () => {
   const [image, setImage] = useState();
   const [red, setRed] = useState(false);
   const [phoneColor, setPhoneColor] = useState("white");
@@ -21,14 +21,14 @@ const Product11tPro = () => {
               className={`mockup-phone ${
                 phoneColor === "blue"
                   ? "bg-blue-500"
-                  : phoneColor === "gray"
-                  ? "bg-gray-300"
+                  : phoneColor === "yellow"
+                  ? "bg-yellow-300"
                   : "bg-black"
               } ${
                 phoneColor === "blue"
                   ? "border-blue-500"
-                  : phoneColor === "gray"
-                  ? "border-gray-300"
+                  : phoneColor === "yellow"
+                  ? "border-yellow-300"
                   : "border-black"
               }`}
             >
@@ -49,8 +49,11 @@ const Product11tPro = () => {
             </div>
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
               <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font">
-                Cookiephon 11t Pro
+                Cookiephon POCO
               </h1>
+              <h3 className="mb-1 text-xs font-medium text-gray-400 title-font">
+                Xiaomi POCO
+              </h3>
               <div className="flex mb-4">
                 <span className="flex items-center">
                   <svg
@@ -128,22 +131,26 @@ const Product11tPro = () => {
                 </span>
               </div>
               <p className="leading-relaxed">
-                Poznaj smartfon, który został zaprojektowany z myślą o
-                wymagających użytkownikach. Cookiephon 11T to połączenie
-                elegancji z nowoczesnością. Aparat, którym zrobisz doskonałe
-                zdjęcia i nakręcisz zapierające dech w piersiach filmy. Świetna
-                wydajność i duża bateria ułatwią Ci codzienną pracę, a kinowy
-                ekran zrobi z Ciebie fana oglądania filmów na wyświetlaczu
-                smartfona.{" "}
+                Pod opisem jest umieszczony przycisk WYBIERZ PLIK kliknij w
+                niego a ukaże Ci się przeglądarka plików. Tak jak nazwa wskazuje
+                wybierz plik czyli zdjęcie z swojej przeglądarki plików a
+                zdjęcie pokaże się na okładce telefonu który wyświetla ci się na
+                ekranie. POCO M3 przy cenie około 10 słodyczy może pochwalić się
+                wyjątkowym aparatem Full HD+, a także niezwyciężoną szybką i
+                niezwykłym wykonaniu z najwyszej jakości surowców co zapewnia mu
+                odpowiednią wydajność. Dodatkowo został wyposażony w baterię,
+                przez co na jednym ładowaniu pracuje nawet 2-3 dni.{" "}
               </p>
               <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
                 <div className="flex">
                   <span className="mr-3">Kolor</span>
                   <button
-                    className={`w-6 h-6 ml-1 bg-gray-300 border-2 ${
-                      phoneColor === "gray" ? "border-black" : "border-gray-300"
-                    } border-gray-500 rounded-full focus:outline-none`}
-                    onClick={() => setPhoneColor("gray")}
+                    className={`w-6 h-6 ml-1 bg-blue-500 border-2 ${
+                      phoneColor === "blue"
+                        ? "border-blue-800"
+                        : "border-gray-300"
+                    } border-gray-300 rounded-full focus:outline-none`}
+                    onClick={() => setPhoneColor("blue")}
                   ></button>
                   <button
                     className={`w-6 h-6 ml-1 bg-black border-2 ${
@@ -154,12 +161,12 @@ const Product11tPro = () => {
                     onClick={() => setPhoneColor("black")}
                   ></button>
                   <button
-                    className={`w-6 h-6 ml-1 bg-blue-500 border-2 ${
-                      phoneColor === "blue"
-                        ? "border-blue-800"
+                    className={`w-6 h-6 ml-1 bg-yellow-300 border-2 ${
+                      phoneColor === "yellow"
+                        ? "border-yellow-500"
                         : "border-gray-300"
                     } border-gray-300 rounded-full focus:outline-none`}
-                    onClick={() => setPhoneColor("blue")}
+                    onClick={() => setPhoneColor("yellow")}
                   ></button>
                 </div>
                 <div className="flex items-center ml-6">
@@ -169,7 +176,7 @@ const Product11tPro = () => {
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">
-                  3 słodycze
+                  18 słodyczy
                 </span>
                 <Link href="/cookiephonkoszyk">
                   <button className="flex px-6 py-2 ml-auto text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">
@@ -202,4 +209,4 @@ const Product11tPro = () => {
   );
 };
 
-export default Product11tPro;
+export default OriginalCookie;
