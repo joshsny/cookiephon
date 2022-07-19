@@ -4,7 +4,7 @@ import { send } from "emailjs-com";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-export default function CookiePhon() {
+export default function Cookiephon() {
   const router = useRouter();
 
   const [toSend, setToSend] = useState({
@@ -22,28 +22,23 @@ export default function CookiePhon() {
       color: router.query.color,
       model: router.query.model,
     });
-    console.log("tosend: ", toSend);
   }, [router.query]);
 
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("toSend: ", toSend);
 
-    send(
-      "service_yog1wdj",
-      "template_6dsc6iq",
-      toSend,
-      "user_BPFiVy6JeuqFWyyLDv3Hk"
-    )
+    send("service_f778y27", "template_r2qutk8", toSend, "rpvVRCoi2_Z7WxU_i")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         router.push("/success");
       })
       .catch((err) => {
-        console.log("FAILED...", err);
+        console.error("FAILED...", err);
+        alert(
+          "Something went wrong with your order! Check the console for an error."
+        );
       });
-
-    router.push("/success");
   };
 
   const handleChange = (e) => {
