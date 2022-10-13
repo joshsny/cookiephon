@@ -10,7 +10,7 @@ const CookiePhonHeader = () => {
           <img
             className="w-16 h-16 text-white p-2 rounded-full"
             alt="hero"
-            src="https://www.gorzkow.eu/images/grafika/glowne/cookies.jpg"
+            src="/logo.png"
           />
           <span className="ml-3 text-xl">Cookiephon</span>
         </a>
@@ -25,14 +25,14 @@ const CookiePhonHeader = () => {
               <a className="mr-5 hover:text-gray-900">SKLEP</a>
             </button>
           </Link>
-          <Link href="/#dowiedzsiewiecej">
-            <button>
-              <a className="mr-5 hover:text-gray-900">NASZ ZESPÓŁ</a>
-            </button>
-          </Link>
           <Link href="/#recenzje">
             <button>
               <a className="mr-5 hover:text-gray-900">RECENZJE</a>
+            </button>
+          </Link>
+          <Link href="/#dowiedzsiewiecej">
+            <button>
+              <a className="mr-5 hover:text-gray-900">O NAS</a>
             </button>
           </Link>
         </nav>

@@ -5,6 +5,8 @@ import { TbChristmasTree } from "react-icons/tb";
 import { GiEasterEgg } from "react-icons/gi";
 import { FaCat } from "react-icons/fa";
 import { FaCookieBite } from "react-icons/fa";
+import { GiBanknote } from "react-icons/gi";
+import { FaMoneyBillAlt } from "react-icons/fa";
 
 const Product = () => {
   const [red, setRed] = useState(false);
@@ -23,11 +25,13 @@ const Product = () => {
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/420x260"
-                />
+                <Link href="/cookiephonyproduct">
+                  <img
+                    alt="ecommerce"
+                    className="block object-cover object-center w-full h-full border-yellow-300 border-[6px] hover:border-yellow-400"
+                    src="/iphone13pro3.png"
+                  />
+                </Link>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
@@ -46,11 +50,13 @@ const Product = () => {
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/421x261"
-                />
+                <Link href="/product12pro">
+                  <img
+                    alt="ecommerce"
+                    className="block object-cover object-center w-full h-full border-yellow-300 border-[6px] hover:border-yellow-400"
+                    src="/iphone12cookie3.png"
+                  />
+                </Link>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
@@ -69,11 +75,13 @@ const Product = () => {
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/422x262"
-                />
+                <Link href="/product11pro">
+                  <img
+                    alt="ecommerce"
+                    className="block object-cover object-center w-full h-full border-yellow-300 border-[6px] hover:border-yellow-400"
+                    src="/iphone11cookie4.png"
+                  />
+                </Link>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
@@ -118,7 +126,7 @@ const Product = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/424x264"
+                  src="https://dummyimage.com/423x263"
                 />
               </a>
               <div className="mt-4">

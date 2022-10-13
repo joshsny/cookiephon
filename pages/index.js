@@ -16,8 +16,10 @@ export default function CookiePhon() {
             <h1 className="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl">
               Cookiephon
             </h1>
-            <h1 className="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-2xl">
-              Witamy
+            <h1 className="mb-4 text-2xl font-medium text-gray-500 title-font sm:text-1xl">
+              Witamy na naszej stronie internetowej. Co jakiś czas bedą się
+              odbywały aktualizację a wszystko co chcesz wiedzieć znajdziesz w
+              zakładce "O nas"
             </h1>
             <div className="flex justify-center">
               <Link href="#zlozzamowienie">
@@ -39,11 +41,13 @@ export default function CookiePhon() {
           <div className="flex flex-wrap justify-center -m-4">
             <div className="w-full p-4 lg:w-1/4 md:w-1/2">
               <a className="relative block h-48 overflow-hidden rounded">
-                <img
-                  alt="ecommerce"
-                  className="block object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/420x260"
-                />
+                <Link href="/product">
+                  <img
+                    alt="ecommerce"
+                    className="block object-cover object-center w-full h-full border-yellow-300 border-[6px] hover:border-yellow-400"
+                    src="/airpods.png"
+                  />
+                </Link>
               </a>
               <div className="flex flex-row items-end">
                 <div className="w-1/2 mt-4">
@@ -66,11 +70,13 @@ export default function CookiePhon() {
             </div>
             <div className="w-full p-4 lg:w-1/4 md:w-1/2">
               <a className="relative block h-48 overflow-hidden rounded">
-                <img
-                  alt="ecommerce"
-                  className="block object-cover object-center w-full h-full"
-                  src="/cookiephony2.jpeg"
-                />
+                <Link href="/cookiephony">
+                  <img
+                    alt="ecommerce"
+                    className="block object-cover object-center w-full h-full border-yellow-300 border-[6px] hover:border-yellow-400"
+                    src="/cookiephone-13.png"
+                  />
+                </Link>
               </a>
               <div className="flex flex-row items-end">
                 <div className="w-1/2 mt-4">
