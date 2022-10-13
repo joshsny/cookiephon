@@ -19,7 +19,7 @@ export default function CookiePhon() {
             <h1 className="mb-4 text-2xl font-medium text-gray-500 title-font sm:text-1xl">
               Witamy na naszej stronie internetowej. Co jakiś czas bedą się
               odbywały aktualizację a wszystko co chcesz wiedzieć znajdziesz w
-              zakładce "O nas"
+              zakładce &quot;O nas&quot;
             </h1>
             <div className="flex justify-center">
               <Link href="#zlozzamowienie">
