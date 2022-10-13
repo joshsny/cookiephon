@@ -1,5 +1,6 @@
-{
-  /* <section className="text-gray-600 bg-gradient-to-t from-lime-500 to-white body-font">
+export const EasterPage = () => (
+  <>
+    {/* <section className="text-gray-600 bg-gradient-to-t from-lime-500 to-white body-font">
   <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <GiEasterEgg className="text-sky-500 w-56 h-56"></GiEasterEgg>
     <div className="text-center lg:w-2/3 w-full">
@@ -19,7 +20,6 @@
       </div>
     </div>
   </div>
-</section>; */
-}
-
-export const EasterPage = () => <></>;
+</section>; */}
+  </>
+);

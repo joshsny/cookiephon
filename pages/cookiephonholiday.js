@@ -1,5 +1,6 @@
-{
-  /* <section className="text-gray-600 bg-gradient-to-t from-yellow-400 to-white body-font">
+export const HolidayPage = () => (
+  <>
+    {/* <section className="text-gray-600 bg-gradient-to-t from-yellow-400 to-white body-font">
   <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <FaCookieBite className="text-amber-700 w-56 h-56"></FaCookieBite>
     <div className="text-center lg:w-2/3 w-full">
@@ -19,7 +20,6 @@
       </div>
     </div>
   </div>
-</section>; */
-}
-
-export const HolidayPage = () => <></>;
+</section>; */}
+  </>
+);

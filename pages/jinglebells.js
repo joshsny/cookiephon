@@ -1,5 +1,6 @@
-{
-  /* <section className="text-gray-600 bg-gradient-to-t from-red-700 to-white body-font">
+export const JingleBellsPage = () => (
+  <>
+    {/* <section className="text-gray-600 bg-gradient-to-t from-red-700 to-white body-font">
   <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <TbChristmasTree className="text-lime-600 w-56 h-56"></TbChristmasTree>
     <div className="text-center lg:w-2/3 w-full">
@@ -21,7 +22,6 @@
       </div>
     </div>
   </div>
-</section>; */
-}
-
-export const JingleBellsPage = () => <></>;
+</section>; */}
+  </>
+);

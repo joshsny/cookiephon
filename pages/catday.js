@@ -1,5 +1,6 @@
-{
-  /* <section className="text-gray-600 bg-gradient-to-t from-fuchsia-600 to-white body-font">
+const CatDayPage = () => (
+  <>
+    {/* <section className="text-gray-600 bg-gradient-to-t from-fuchsia-600 to-white body-font">
   <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <FaCat className="text-indigo-600 w-56 h-56"></FaCat>
     <div className="text-center lg:w-2/3 w-full">
@@ -19,7 +20,6 @@
       </div>
     </div>
   </div>
-</section>; */
-}
-
-const CatDayPage = () => <></>;
+</section>; */}
+  </>
+);
