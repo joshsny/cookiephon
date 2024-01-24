@@ -100,11 +100,13 @@ const Product = () => {
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/423x263"
-                />
+                <Link href="/product11tpro">
+                  <img
+                    alt="ecommerce"
+                    className="block object-cover object-center w-full h-full border-yellow-300 border-[6px] hover:border-yellow-400"
+                    src="/xiaomi11tcookie.png"
+                  />
+                </Link>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">

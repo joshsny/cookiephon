@@ -12,7 +12,11 @@ const CookiePhonHeader = () => {
             alt="hero"
             src="/logo.png"
           />
-          <span className="ml-3 text-xl">Cookiephon</span>
+          <Link href="/">
+            <button className="ml-3 text-xl">
+              <span>Cookiephon</span>
+            </button>
+          </Link>
         </a>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-black	flex flex-wrap items-center text-base justify-center">
           <Link href="/">
